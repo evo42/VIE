@@ -97,7 +97,7 @@ VIE.ContainerManager = {
 
     getModelForContainer: function(element) {
         var type = VIE.ContainerManager._getContainerValue(element, 'typeof');
-
+        console.log(type);
         if (typeof VIE.ContainerManager.models[type] !== 'undefined') {
             // We already have a model for this type
             return VIE.ContainerManager.models[type];
@@ -126,7 +126,9 @@ VIE.ContainerManager = {
         };
 
         VIE.ContainerManager.findAdditionalModelProperties(element, modelProperties);
-
+        
+        console.log(Backbone.Model);
+        
         VIE.ContainerManager.models[type] = Backbone.Model.extend(modelProperties);
 
         return VIE.ContainerManager.models[type];

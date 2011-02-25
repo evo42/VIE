@@ -8,6 +8,8 @@
 				var propertyName = containerProperty.attr('property');
 				containerInstance.editables[propertyName] = new GENTICS.Aloha.Editable(containerProperty);
 				containerInstance.editables[propertyName].vieContainerInstance = containerInstance;
+				
+				//alert(containerInstance.editables[propertyName].getContents());
 			});
 		})
 	}
