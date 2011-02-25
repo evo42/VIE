@@ -1,6 +1,12 @@
+Vienna IKS Editables
+====================
+
 VIE is a utility library for implementing [decoupled Content Management systems](http://bergie.iki.fi/blog/decoupling_content_management/).
 
 ![Decoupled CMS communications](https://github.com/bergie/VIE/raw/master/cms-decoupled-communications.png)
+
+* In French, _vie_ means life, showcasing how VIE makes your website come alive
+* In English, _vie_ means striving for victory or superiority
 
 ## Common representation of content on HTML level
 
@@ -39,6 +45,21 @@ With Backbone, the content extracted from the RDFa-annotated HTML page is easily
 
 This JS would work across all the different CMS implementations. Backbone.js provides a quite nice RESTful implementation of communicating with the server with JSON, but it can be easily overridden with CMS-specific implementation by just implementing a new [Backbone.sync method](http://documentcloud.github.com/backbone/#Sync).
 
+## Example
+
+There is a full static HTML example of VIE at work. Saving outputs the edited contents as JSON into the JavaScript console:
+
+* [Example with Aloha Editor](https://github.com/bergie/VIE/raw/master/example.html)
+* [Example with WYMeditor](https://github.com/bergie/VIE/blob/wymeditor/example-wymeditor.html)
+
 ## Implementations
 
 * [Midgard Create](https://github.com/bergie/midgardmvc_ui_create)
+* [WordPress](https://github.com/Jotschi/Aloha-Editor-Wordpress-Plugin)
+* [TYPO3](http://git.typo3.org/TYPO3v5/Distributions/Base.git)
+* [KaraCos](http://gitorious.org/karacos2-wsgi-web-applications-engine/karacos2-wsgi-web-applications-engine)
+* Gentics Enterprise CMS
+* Drupal
+* Jekyll
+
+See also [VIE on Ohloh](http://www.ohloh.net/p/vie).
