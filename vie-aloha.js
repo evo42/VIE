@@ -1,5 +1,4 @@
 (function($){
-/*
 	$.fn.vieSemanticAloha = function() {
 		this.each(function() {
 			var containerInstance = VIE.ContainerManager.getInstanceForContainer(jQuery(this));
@@ -14,8 +13,9 @@
 			});
 		})
 	}
-*/
-    $.fn.vieSemanticAloha = function() {
+
+/*
+$.fn.vieSemanticAloha = function() {
         this.each(function() {
             var containerInstance = VIE.ContainerManager.getInstanceForContainer(jQuery(this));
             containerInstance.editables = {};
@@ -33,6 +33,7 @@
             });
         })
     }
+*/
 })(jQuery);
 
 if (typeof VIE === 'undefined') {
